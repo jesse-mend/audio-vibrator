@@ -9,6 +9,9 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  WS_LOG_LEVEL: TRACE
+
 steps:
 - task: NodeTool@0
   inputs:
@@ -24,5 +27,3 @@ steps:
 - task: WhiteSource@21
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
-    configuration: |
-      env: WS_LOG_LEVEL=TRACE
