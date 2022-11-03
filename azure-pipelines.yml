@@ -22,4 +22,24 @@ steps:
 - task: WhiteSource@21
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
-    projectName: 'test-test'
+    wss.url: 
+    projectToken:
+    productName: 
+    productVersion: 
+    projectVersion: 
+    projectName: 'my project'
+    productToken: 
+    scanComment: 
+    offline: 
+    generateScanReport: 
+    scanReportTimeoutMinutes: 
+    generateProjectDetailsJson: 
+    scm.*: 
+    serverless.*: 
+    docker.*: 
+    hex.aggregate: 
+    sbt.aggregate: 
+    maven.aggregate: 
+    gradle.aggregate: 
+    ocaml.aggregate: 
+    projectPerFolder: 
